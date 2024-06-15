@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="/public/css/theme.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/johanna-fageras/static/styles/font-awesome.css">
+  <link rel="stylesheet" href="/public/css/index.css">
+  <link rel="stylesheet" href="/public/css/.css">
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-white">
+    <div class="container">
+      <a class="navbar-brand" href="/"><img src="/public/images/JFicons.png" width="250px" height="auto"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Icon Libraries
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/about">Pixelore Light</a></li>
+              <li><a class="dropdown-item" href="/contact">Pixelore Regular</a></li>
+              <li><a class="dropdown-item" href="#">Pixelore Bold</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/icons/iconosphere_lineal">Iconosphere Lineal</a></li>
+              <li><a class="dropdown-item" href="/icons/iconosphere_solid">Iconosphere Solid</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Using Icons
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Iconfonts</a></li>
+              <li><a class="dropdown-item" href="#">SVG Symbols</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="" class="btn my-btn-fill">Download Icons <i
+                  class="fas fa-arrow-down-to-bracket"></i></a></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="my-container">
+    
+<h1>About Us</h1>
+<p>This is my about page</p>
+  </div>
+  <footer class="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <ul class="list-unstyled">
+            <li>Birger Jarlsgatan 37B</li>
+            <li>111 45 Stockholm, SE</li>
+            <li>Email: johanna.fageras@gmail.com</li>
+            <li>Phone: +46 76-065 69 42</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Links Section -->
+      <div class="col-md-2">
+        <div class="footer-menu">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="/index">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Menu Section -->
+      <div class="col-md-2">
+        <div class="footer-menu">
+          <h5>Icons</h5>
+          <ul class="list-unstyled">
+            <li><a href="/icons/iconosphere_lineal.html">Iconosphere Lineal</a></li>
+            <li><a href="/icons/iconosphere_solid.html">Iconosphere Solid</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Menu Section -->
+      <div class="col-md-2">
+        <div class="footer-menu">
+          <h5>Icons</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Another Iconset 1</a></li>
+            <li><a href="#">Another Iconset 2</a></li>
+            <li><a href="#">Another Iconset 3</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="footer-logo">
+          <img src="/public/images/JFicons.png" alt="Logo" width="250px" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/public/js/bootstrap.js"></script>
+<script src="/public/js/clipboard.js"></script>
+<script src="/public/js/symbols.js"></script>
+<script>
+  new ClipboardJS('.icon-box');
+
+  $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip({ trigger: 'click', delay: { hide: 3500 } });
+  });
+
+  $(document).ready(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip();
+    setInterval(function () {
+      $('[data-bs-toggle="tooltip"]').tooltip('hide');
+    }, 3500);
+  });
+</script>
+</body>
+
+</html>
