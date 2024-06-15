@@ -5,8 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "eleventy --serve",
-        "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
-        "build:prod": "npm run build:eleventy:prod & npm run build:sass:prod"
+        "build": "npx @11ty/eleventy"
     },
     "keywords": [],
     "author": "",
