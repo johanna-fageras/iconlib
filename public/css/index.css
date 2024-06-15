@@ -267,6 +267,19 @@ input#sizeSlider.size-slider:focus {
   color: #FFFFFF;
 }
 
+.my-btn {
+  background-color: #e6006e;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
+
+.my-btn:hover {
+  background-color: #cc0062;
+  border: none;
+  color: #FFFFFF;
+}
+
 .fa-solid,
 .fas {
   font-family: 'Font Awesome';
@@ -377,8 +390,6 @@ input#sizeSlider.size-slider:focus {
 
   .my-container h1 {
     position: relative;
-    top: 50px;
-    margin: 45px auto;
   }
 }
 
