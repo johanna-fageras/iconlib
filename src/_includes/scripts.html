@@ -1,0 +1,19 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/public/js/bootstrap.js"></script>
+<script src="/public/js/clipboard.js"></script>
+<script src="/public/js/symbols.js"></script>
+<script>
+  new ClipboardJS('.icon-box');
+
+  $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip({ trigger: 'click', delay: { hide: 3500 } });
+  });
+
+  $(document).ready(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip();
+    setInterval(function () {
+      $('[data-bs-toggle="tooltip"]').tooltip('hide');
+    }, 3500);
+  });
+</script>
+</body>
