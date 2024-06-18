@@ -1,0 +1,26 @@
+---
+layout: base.html
+title: Pixel Perfection Solid
+icons: Pixel Perfection
+version: 1.0.0
+---
+
+<div class="btn-group custom-link" role="group" aria-label="Basic radio toggle button group">
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+  <label class="btn btn-outline-primary" style="border-color: #0f172a;" for="btnradio3"><a
+      href="/icons/pixel_perfection_outline" class="btn-group-dark-text">Outline</a></label>
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+  <label class="btn btn-outline-primary" for="btnradio1" style="background-color: #0f172a; border-color: #0f172a;"><a
+      href="/icons/pixel_perfection_solid" class="btn-group-white-text">Solid</a></label>
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+  <label class="btn btn-outline-primary" style="border-color: #0f172a;" for="btnradio3"><a
+      href="/icons/pixel_perfection_color" class="btn-group-dark-text">Color</a></label>
+</div>
+<h1>{{ icons }}</h1>
+<h5 class="text-muted">Version {{ version }}</h5>
+
+{% include "controls.html" %}
+
+<div class="icon-grid" id="iconGrid">
+
+</div>
